@@ -71,7 +71,7 @@ int main()
 
         if(userInput == 0)
         {
-            printf("Please enter a title, remember that this is case sensitive\n");
+            printf("Please enter a title:\n");
             scanf(" %[^\n]s", userInput2);  // scanning user input until newline character
             search_title(my_book_array, numBooks, userInput2); // calling function to search by title
         }
@@ -79,7 +79,7 @@ int main()
 
         else if(userInput == 1)
         {
-            printf("Please enter an author, remember that this is case sensitive\n");
+            printf("Please enter an author:\n");
             scanf(" %[^\n]s", userInput2);  // scanning user input until newline character
             search_author(my_book_array, numBooks, userInput2); // calling function to search by author
         }
@@ -87,7 +87,7 @@ int main()
 
         else if(userInput == 2)
         {
-            printf("Please enter an ISBN, remember that this is case sensitive\n");
+            printf("Please enter an ISBN:\n");
             scanf(" %[^\n]s", userInput2);  // scanning user input until newline character
             search_ISBN(my_book_array, numBooks, userInput2);  // calling function to search by ISBN
         }
